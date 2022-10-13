@@ -1,0 +1,245 @@
+:root{
+    --green: rgb(10, 220, 42);
+    --darkBlue: hsl(233, 26%, 24%);
+}
+* {
+    margin: 0;
+    box-sizing: border-box;
+}
+body {
+    font-size: 62.5%;
+    font-family: 'Poppins', sans-serif;
+}
+.w3l-header-nav {
+    width: 100%;
+    padding: 10px 0px;
+}
+.navbar {
+    margin: auto;
+    width: 80%;
+    display: flex;
+    justify-content: space-between;
+    font-size: 1.2rem;
+    height: 60px;
+}
+.navbar-brand img{
+    width: 140px;
+}
+.navbar-collapse ul{
+    display: flex;
+    align-items: center;
+    height: 60px;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+.navbar-collapse ul li a {
+    text-decoration: none;
+    padding: 8px;
+    text-transform: uppercase;
+}
+
+.call-support h5 {
+    font-size: 1.6rem;
+    font-weight: bold;
+}
+.wrapper{
+    width: 100%;
+    padding: 20px 15px;
+}
+.is-hidden {
+    display: none;
+}
+
+/* sliders */
+.mySlides {
+    display: none;
+}
+img {
+    vertical-align: middle;
+    
+}
+
+.slideshow-container{
+    max-width: 1000px;
+    max-height: 200px;
+    position: relative;
+    margin: auto;
+    overflow: hidden;
+    
+}
+.prev,
+.next {
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    width: auto;
+    padding: 16px;
+    margin-top: -22px;
+    color: white;
+    font-weight: bold;
+    font-size: 18px;
+    transition: 0.8s ease;
+    border-radius: 0 3px 3px 0;
+    user-select: none;
+}
+.next {
+    right: 0;
+    border-radius: 3px 0 0 3px;
+}
+.prev:hover,
+.next:hover{
+    background-color: rgba(0, 0, 0, 0.8);
+} 
+
+.text {
+    width: 100%;
+    text-align: center;
+    color: #f2f2f2;
+    font-size: 16px;
+    padding: 8px 12px;
+    position: absolute;
+    bottom: 8px;
+}
+
+.numberText {
+    color: #f2f2f2;
+    font-size: 16px;
+    padding: 8px 12px;
+    position: absolute;
+    top: 0;
+}
+.dots {
+    text-align: center;
+}
+
+.dot {
+    cursor: pointer;
+    height: 15px;
+    width: 15px;
+    margin: 0 2px;
+    background-color: #bbb;
+    border-radius: 50%;
+    display: inline-block;
+    transition: background-color 0.6s ease;
+  }
+.active,
+.dot:hover {
+  background-color: #717171;
+}
+
+.fade {
+    animation-name: fade;
+    animation-duration: 1.8s;
+}
+
+@keyframes fade {
+    from
+    {
+        opacity: 0.4;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+/* End Sliders */
+
+.subtitle-content {
+    position: relative;
+    font-size: 1rem;
+    line-height: 3px;
+    font-weight: 700;
+    font-style: normal;
+    padding-left: 70px;
+    color: #400083;
+}
+.subtitle-content::before{
+    content: '';
+    display: block;
+    width: 55px;
+    height: 1px;
+    background-color: #fe436e;
+    position: absolute;
+    left: 0;
+    top: 50%;
+}
+h3.hny-title-content {
+    font-size: 1.8rem;
+    line-height: 46px;
+    color: #0d001a;
+    text-transform: capitalize;
+    font-weight: 700;
+}
+.container {
+    background: #faf5ff;
+}
+.content-info-in p {
+    font-size: 1rem;
+    line-height: 25px;
+    margin-bottom: 10px;
+}
+
+/*Footer*/
+.footer{
+    width: 100%;
+    background: var(--darkBlue);
+    bottom: 0px;
+    color: white;
+}
+.footer__social{
+    display: grid;
+    grid-template-columns: repeat(5,25px);
+    grid-column-gap: 10px;
+    margin: 20px 0px;
+}
+.icon__facebook {
+    width: 40px;
+    height: 40px;
+    display: inline-flex;
+    background-repeat: no-repeat;
+    background-image: url("../assets/images/icon-facebook.svg");
+    
+  }
+  .icon__youtube {
+    width: 40px;
+    height: 40px;
+    display: inline-flex;
+    background-repeat: no-repeat;
+    background-image: url("../assets/images/icon-youtube.svg");
+  }
+  .icon__twitter {
+    width: 40px;
+    height: 40px;
+    display: inline-flex;
+    background-repeat: no-repeat;
+    background-image: url("../assets/images/icon-twitter.svg");
+  }
+  .icon__pinterest {
+    width: 40px;
+    height: 40px;
+    display: inline-flex;
+    background-repeat: no-repeat;
+    background-image: url("../assets/images/icon-pinterest.svg");
+  }
+  .icon__instagram {
+    width: 40px;
+    height: 40px;
+    display: inline-flex;
+    background-repeat: no-repeat;
+    background-image: url("../assets/images/icon-instagram.svg");
+  }
+
+@media (max-width:768px){
+    .navbar-collapse,
+    .call-support{
+        display:none;
+    }
+    
+}
+@media (min-width:768px){
+    .slideshow-container{
+        max-height: 400px;
+    }
+    
+}
