@@ -1,6 +1,9 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;600&display=swap');
 :root{
-    --green: rgb(10, 220, 42);
-    --darkBlue: hsl(233, 26%, 24%);
+    --bluePrimary: #207BFF;
+    --blueSecondary: #4EA5FF;
+    --whiteFont: #F5f7fA;
+    --bluePoint: #09131D;
 }
 * {
     margin: 0;
@@ -8,45 +11,41 @@
 }
 body {
     font-size: 62.5%;
-    font-family: 'Poppins', sans-serif;
-}
-.w3l-header-nav {
-    width: 100%;
-    padding: 10px 0px;
-}
-.navbar {
-    margin: auto;
-    width: 80%;
-    display: flex;
-    justify-content: space-between;
-    font-size: 1.2rem;
-    height: 60px;
-}
-.navbar-brand img{
-    width: 140px;
-}
-.navbar-collapse ul{
-    display: flex;
-    align-items: center;
-    height: 60px;
-    list-style: none;
-    padding: 0;
-    margin: 0;
-}
-.navbar-collapse ul li a {
-    text-decoration: none;
-    padding: 8px;
-    text-transform: uppercase;
-}
-
-.call-support h5 {
-    font-size: 1.6rem;
-    font-weight: bold;
+    font-family: 'Montserrat', sans-serif;
+    background: var(--whiteFont);
 }
 .wrapper{
-    width: 100%;
-    padding: 20px 15px;
+    width: 90%;
+    margin: auto;
+    
 }
+
+header {
+    width: 90%;
+    margin: 0 auto;
+    height: 60px;
+    display: flex;
+    align-items: center;
+    
+}
+.navbar ul{
+   display: flex; 
+   gap: 20px;
+}
+.navbar li{
+    list-style: none;
+}
+.navbar a {
+    text-decoration: none;
+    font-size: 16px;
+    font-weight: 400;
+
+}
+
+.logo img {
+    width: 100px;
+}
+
 .is-hidden {
     display: none;
 }
@@ -61,7 +60,7 @@ img {
 }
 
 .slideshow-container{
-    max-width: 1000px;
+   
     max-height: 200px;
     position: relative;
     margin: auto;
@@ -183,9 +182,11 @@ h3.hny-title-content {
 /*Footer*/
 .footer{
     width: 100%;
-    background: var(--darkBlue);
-    bottom: 0px;
-    color: white;
+    background: var(--bluePoint);
+    color: var(--whiteFont);
+}
+.footer__container {
+    margin: 40px 0 0 40px; 
 }
 .footer__social{
     display: grid;
@@ -230,16 +231,61 @@ h3.hny-title-content {
     background-image: url("../assets/images/icon-instagram.svg");
   }
 
-@media (max-width:768px){
+  .footer__links {
+    /* border: 2px solid red; */
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .footer_mapasitio,.footer__institucional, .footer__legal {
+    /* border: 1px solid white; */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 20px;
+  }
+  .footer__institucional a:last-child,.footer_mapasitio a:last-child, .footer__legal a:last-child {
+    border: none;
+  }
+  .footer__links a{
+    width: 100%;
+    text-decoration: none;
+    color: var(--whiteFont);
+    font-size: 14px;
+    cursor: pointer;
+    margin: 4px 0 4px 0;
+    padding: 4px 0 4px 0;
+    border-bottom: 1px solid rgb(255 255 255 / 22%);;
+  }
+  .footer__links a:hover {
+    color: #f8f9fa;
+  }
+  .footer__links h3 {
+    font-size: 20px;
+  }
+ 
+  .footer__derechos{
+    text-align: center;
+    font-size: 16px;
+    padding-bottom: 20px;
+  }
+
+
+@media screen and (min-width:768px){
     .navbar-collapse,
     .call-support{
-        display:none;
+        display: block;
     }
-    
-}
-@media (min-width:768px){
     .slideshow-container{
-        max-height: 400px;
+        height: 400px;
+    }    
+}
+@media screen and (min-width: 1024px){
+    .footer__links{
+        flex-direction: row;
+        justify-content: space-between;
     }
-    
+    .footer_mapasitio,.footer__institucional, .footer__legal {
+        align-items: flex-start;
+      }
 }

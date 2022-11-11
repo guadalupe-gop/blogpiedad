@@ -5,87 +5,80 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Farmacias La Piedad®</title>
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;700&display=swap"
-      rel="stylesheet"
-    />
     <link rel="stylesheet" href="./css/style.css" />
   </head>
   <body>
-    <header class="w3l-header-nav">
-      <nav class="navbar">
-        <a class="navbar-brand" href="">
-          <img
-            src="./assets/images/logopiedad.jpg"
-            alt="Logo farmacias la piedad"
-          />
-        </a>
-
-        <div class="collapse navbar-collapse" id="navbarSupportedContent">
-          <ul class="navbar-nav">
-            <li class="nav-item">
-              <a class="nav-link" href="#">Inicio</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#">Acerca de</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#">Servicios</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#">Contact</a>
-            </li>
-          </ul>
-        </div>
-
-        <div class="call-support">
-          <p>¿Tiene alguna pregunta?</p>
-          <h5>963-105-37-07</h5>
-        </div>
+    
+  <header> 
+    <a class="logo" href="">
+      <img
+        src="./assets/images/logopiedad.jpg"
+        alt="Logo farmacias la piedad"
+      />
+    </a>
+    <nav class="navbar is-hidden">
+        <ul >
+          <li class="nav-item">
+            <a class="nav-link" href="#">Conócenos</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Servicios</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Asesoria Médica</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Eventos</a>
+          </li>
+        </ul>
       </nav>
-    </header>
-
-    <section>
-      <div class="slideshow-container">
-        <div class="mySlides fade">
-          <!-- <div class="numberText">1 / 3</div> -->
-          <img
-            src="./assets/images/pexels1.jpg"
-            alt=""
-            width="100%"
-            height="50%"
-          />
-          <div class="text">Caption Text</div>
-        </div>
-        <div class="mySlides fade">
-          <!-- <div class="numberText">2 / 3</div> -->
-          <img
-            src="./assets/images/pexels2.jpg"
-            alt=""
-            width="100%"
-            height="50%"
-          />
-          <div class="text">Caption Text</div>
-        </div>
-        <div class="mySlides fade">
-          <!-- <div class="numberText">3 / 3</div> -->
-          <img
-            src="./assets/images/pexels3.jpg"
-            alt=""
-            width="100%"
-            height="50%"
-          />
-          <div class="text">Caption Text</div>
-        </div>
-        <a class="prev" onclick="plusSlides(-1)">❮</a>
-        <a class="next" onclick="plusSlides(1)">❯</a>
+      <div class="call-support is-hidden">
+        <p>¿Tiene alguna pregunta?</p>
+        <h5>963-105-37-07</h5>
       </div>
-      <div class="dots">
-        <span class="dot" onclick="currentSlide(1)"></span>
-        <span class="dot" onclick="currentSlide(2)"></span>
-        <span class="dot" onclick="currentSlide(3)"></span>
+  </header>
+
+  <section>
+      <div class="wrapper">
+        <div class="slideshow-container">
+          <div class="mySlides fade">
+            <!-- <div class="numberText">1 / 3</div> -->
+            <img
+              src="./assets/images/pexels1.jpg"
+              alt=""
+              width="100%"
+              height="50%"
+            />
+            <div class="text">Caption Text</div>
+          </div>
+          <div class="mySlides fade">
+            <!-- <div class="numberText">2 / 3</div> -->
+            <img
+              src="./assets/images/pexels2.jpg"
+              alt=""
+              width="100%"
+              height="50%"
+            />
+            <div class="text">Caption Text</div>
+          </div>
+          <div class="mySlides fade">
+            <!-- <div class="numberText">3 / 3</div> -->
+            <img
+              src="./assets/images/pexels3.jpg"
+              alt=""
+              width="100%"
+              height="50%"
+            />
+            <div class="text">Caption Text</div>
+          </div>
+          <a class="prev" onclick="plusSlides(-1)">❮</a>
+          <a class="next" onclick="plusSlides(1)">❯</a>
+        </div>
+        <div class="dots">
+          <span class="dot" onclick="currentSlide(1)"></span>
+          <span class="dot" onclick="currentSlide(2)"></span>
+          <span class="dot" onclick="currentSlide(3)"></span>
+        </div>
       </div>
     </section>
 
@@ -96,20 +89,33 @@
           <h3 class="hny-title-content">Farmacias la Piedad</h3>
         </div>
         <div class="content-info-in">
-          <div class="">
-            <p>
-              Lorem ipsum dolor, sit amet consectetur adipisicing elit. Commodi,
-              nostrum! Ipsa iure fugit eveniet, dicta omnis nam maxime quo unde
-              expedita beatae, ratione exercitationem quam facilis ab, illum
-              vitae culpa.
-            </p>
-          </div>
           <div>
             <p>
-              Lorem ipsum dolor sit amet consectetur, adipisicing elit. Vero non
-              itaque magni aliquid labore rerum magnam praesentium similique
-              ipsa repellat eligendi, recusandae mollitia hic voluptatibus quae
-              suscipit ducimus dolorem nihil.
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin
+              quam sapien, tincidunt nec aliquam nec, pellentesque eu ligula.
+              Integer commodo aliquet diam et fermentum. Etiam eget ligula
+              turpis. Praesent at metus et lectus bibendum cursus. Fusce
+              sodales, mauris id tempor elementum, turpis mi rhoncus nibh, in
+              interdum lacus sapien quis urna. Morbi non commodo nisi, ut
+              convallis libero. Donec id odio in odio dapibus interdum. Proin
+              egestas viverra augue quis ultrices. Integer tristique massa id
+              urna euismod, sit amet ornare velit pharetra. Curabitur fringilla
+              porta vestibulum. Sed pellentesque ex eros, vitae consequat arcu
+              fermentum nec. Praesent a enim mollis, tincidunt nulla ut,
+              porttitor leo. Nunc eu neque eget dolor tincidunt egestas vel sit
+              amet metus. Aenean scelerisque risus sed lacinia pulvinar.
+              Phasellus sapien massa, fermentum vitae rhoncus sed, interdum ut
+              felis. Nulla vulputate quam ut lorem imperdiet, id vehicula neque
+              feugiat. Etiam interdum, tellus ut venenatis ullamcorper, libero
+              justo mattis dui, imperdiet efficitur lacus nisl ac nisl. Aenean
+              nec nisi leo. Morbi a accumsan lectus. Vestibulum hendrerit,
+              tellus sed feugiat maximus, nulla sapien blandit tellus, non
+              lacinia felis urna bibendum risus. Cras sed dictum urna. Maecenas
+              consectetur vehicula elit, vitae vehicula leo auctor sed. In
+              accumsan turpis lacus, in interdum leo iaculis eget. Etiam sit
+              amet lacus a neque aliquet egestas quis id felis. Nulla viverra,
+              justo sed aliquet aliquam, odio lectus pulvinar tellus, quis
+              viverra nunc sapien et mauris.
             </p>
           </div>
         </div>
@@ -118,29 +124,42 @@
 
     <footer class="footer">
       <div class="wrapper">
-        <h1 class="title__h1">Other</h1>
-        <p>
-          Lorem, ipsum dolor sit amet consectetur adipisicing elit. Sint,
-          reiciendis eveniet necessitatibus saepe corrupti laborum ab? Illum,
-          itaque cupiditate. Voluptatem esse ipsa, corrupti dolorem ad minus
-          deserunt fugit dolor neque.
-        </p>
-        <p class="footer__social">
+        <div>
+          <p class="footer__social">
+        </div>
           <a href="" class="icon__facebook"></a>
           <a href="" class="icon__youtube"></a>
           <a href="" class="icon__twitter"></a>
           <a href="" class="icon__pinterest"></a>
           <a href="" class="icon__instagram"></a>
         </p>
-        <a href="" class="footer__link"> About Us</a>
-        <a href="" class="footer__link">Contacto</a>
-        <a href="" class="footer__link">Blog </a>
-        <a href="" class="footer__link">Sucursales </a>
-        <a href="" class="footer__link">Soporte </a>
-        <a href="" class="footer__link">Politica de privacidad</a>
-        <h2 class="subtitle__h2">Newsletter</h2>
+        <div class="footer__links">
+          <div class="footer_mapasitio">
+            <h3>Empresa</h3>
+            <a href="#">Sucursales</a>
+            <a href="#">Eventos</a>
+            <a href="#">Sobre la piedad</a>
+            <a href="#">Servicio a Domicilio</a>
+          </div>
+          <div class="footer__institucional">
+            <h3>Institucional</h3>
+            <a href="" class="_footer__link_">Bolsa de Trabajo</a>
+            <a href="" class="_footer__link_">Quejas y Sugerencias</a>
+            <a href="" class="_footer__link_">Atención a instituciones</a>
+            <a href="" class="_footer__link_">Convenios</a>
+            <a href="" class="_footer__link_">Inmueble y mobiliarios</a>
+          </div>
+          <div class="footer__legal">
+            <h3>Legal</h3>
+            <a href="#">Terminos y condiciones</a>
+            <a href="#">Politica de privacidad</a>
+            <a href="#">Facturación</a>
+          </div>
+        </div>
 
-        <p>© 2022 Farmacias La Piedad. Todos los derechos reservados</p>
+        <p class="footer__derechos">
+          © 2022 Farmacias La Piedad. Todos los derechos reservados
+        </p>
       </div>
     </footer>
     <script src="./js/index.js"></script>
